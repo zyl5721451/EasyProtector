@@ -1,0 +1,3 @@
+C:/Users/yilongzhang/Documents/EasyProtector/library/.externalNativeBuild/cmake/debug/x86/CMakeFiles/antitrace.dir
+C:/Users/yilongzhang/Documents/EasyProtector/library/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir
+C:/Users/yilongzhang/Documents/EasyProtector/library/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir

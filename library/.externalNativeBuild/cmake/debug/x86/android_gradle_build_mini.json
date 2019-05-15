@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "C:\\Users\\yilongzhang\\Documents\\EasyProtector\\library\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\yilongzhang\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\yilongzhang\\Documents\\EasyProtector\\library\\.externalNativeBuild\\cmake\\debug\\x86 --target clean"
+  ],
+  "libraries": {
+    "antitrace-Debug-x86": {
+      "artifactName": "antitrace",
+      "buildCommand": "C:\\Users\\yilongzhang\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\yilongzhang\\Documents\\EasyProtector\\library\\.externalNativeBuild\\cmake\\debug\\x86 --target antitrace",
+      "abi": "x86",
+      "output": "C:\\Users\\yilongzhang\\Documents\\EasyProtector\\library\\build\\intermediates\\cmake\\debug\\obj\\x86\\libantitrace.so"
+    }
+  }
+}

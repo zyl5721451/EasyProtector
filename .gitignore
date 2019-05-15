@@ -44,3 +44,4 @@ captures/
 bugly
 # apk file
 /app/official
+/.idea/

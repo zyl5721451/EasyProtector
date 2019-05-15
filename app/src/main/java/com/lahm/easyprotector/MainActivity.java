@@ -1,7 +1,9 @@
 package com.lahm.easyprotector;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -31,6 +33,21 @@ public class MainActivity extends AppCompatActivity
         findViewById(R.id.checkXP).setOnClickListener(this);
         findViewById(R.id.readSysProperty).setOnClickListener(this);
         findViewById(R.id.test).setOnClickListener(this);
+
+
+
+
+
+        boolean isHook = CheckHook.isHook(this);
+        boolean isRoot = CheckRoot.isDeviceRooted();
+        boolean isVirtual = CheckVirtual.isRunInVirtual();
+        Log.d("chao", "manufactor1:" + (Build.MODEL));
+//        boolean isEnulator = EmulatorDetector.isEmulator(this);
+        Log.d("chao", "isHook:" + isHook);
+        Log.d("chao", "isRoot:" + isRoot);
+        Log.d("chao", "isVirtual:" + isVirtual);
+        Log.d("chao", "manufactor:" + Build.MANUFACTURER);
+//        Log.d("chao", "isEnulator:" + isEnulator);
     }
 
     private void forTest() {
