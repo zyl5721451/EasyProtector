@@ -1,5 +1,6 @@
 package com.lahm.easyprotector;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity
 
     private void forTest() {
         //only for test
+        startActivity(new Intent(this,BuildListActivity.class));
     }
 
     @Override
@@ -126,6 +128,8 @@ public class MainActivity extends AppCompatActivity
                     }
                 });
                 break;
+
+
         }
     }
 }
