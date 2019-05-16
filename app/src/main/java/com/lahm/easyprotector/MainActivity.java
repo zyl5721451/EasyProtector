@@ -43,12 +43,12 @@ public class MainActivity extends AppCompatActivity
         boolean isRoot = CheckRoot.isDeviceRooted();
         boolean isVirtual = CheckVirtual.isRunInVirtual();
         Log.d("chao", "manufactor1:" + (Build.MODEL));
-//        boolean isEnulator = EmulatorDetector.isEmulator(this);
+        boolean isEnulator = EmulatorDetector.isEmulator(this);
         Log.d("chao", "isHook:" + isHook);
         Log.d("chao", "isRoot:" + isRoot);
         Log.d("chao", "isVirtual:" + isVirtual);
         Log.d("chao", "manufactor:" + Build.MANUFACTURER);
-//        Log.d("chao", "isEnulator:" + isEnulator);
+        Log.d("chao", "isEnulator:" + isEnulator);
     }
 
     private void forTest() {

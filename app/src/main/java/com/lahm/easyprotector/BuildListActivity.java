@@ -86,8 +86,20 @@ public class BuildListActivity extends AppCompatActivity {
 
     @NonNull
     private ArrayList<String> getBuildInfo() {
+
+        boolean isHook = CheckHook.isHook(this);
+        boolean isRoot = CheckRoot.isDeviceRooted();
+        boolean isVirtual = CheckVirtual.isRunInVirtual();
+        boolean isEnulator = EmulatorDetector.isEmulator(this);
+
+
         ArrayList<String> deviceInfo = new ArrayList<>();
         deviceInfo.add("-----------Build基本信息-------------"); //
+        deviceInfo.add("isHook:"+ isHook); //设备显示的版本包 固件版本
+        deviceInfo.add("isRoot:"+ isRoot); //设备显示的版本包 固件版本
+        deviceInfo.add("isVirtual:"+ isVirtual); //设备显示的版本包 固件版本
+        deviceInfo.add("isEnulator:"+ isEnulator); //设备显示的版本包 固件版本
+
         deviceInfo.add("版本名display:"+ Build.DISPLAY); //设备显示的版本包 固件版本
         deviceInfo.add("指令集cpu_abi:"+ Build.CPU_ABI); //CPU指令集
         deviceInfo.add("指令集cpu_abi2:"+ Build.CPU_ABI2); //CPU指令集
